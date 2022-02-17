@@ -13,91 +13,124 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          <a href="https://github.com/kartiksindura" target="_blank" style={{color:"white"}}>
+          <a href="/" target="_blank" style={{ color: "#dd4087" }}>
             Kartik
           </a>
-        <p></p>
         </h1>
-        <div className="logos">
-          <a className="discord">
-            <Link href="/posts/first-post">
-              <Image
-                alt="Next.js logo"
-                src={require("../public/icons8-discord-480.png")}
-                width={35}
-                height={35}
-              />
-            </Link>
-          </a>
-          <a className="twitter">
-            <Link href="/posts/first-post">
-              <Image
-                alt="Next.js logo"
-                src={require("../public/icons8-twitter-480.png")}
-                width={35}
-                height={35}
-              />
-            </Link>
-          </a>
-          <a className="github">
-            <Link href="/posts/first-post">
-              <Image
-                alt="Next.js logo"
-                src={require("../public/icons8-github-480.png")}
-                width={35}
-                height={35}
-              />
-            </Link>
-          </a>
-          <a className="instagram">
-            <Link href="/posts/first-post">
-              <Image
-                alt="Next.js logo"
-                src={require("../public/icons8-instagram-480.png")}
-                width={35}
-                height={35}
-              />
-            </Link>
-          </a>
-          <a className="spotify">
-            <Link href="/posts/first-post">
-              <Image
-                alt="Next.js logo"
-                src={require("../public/icons8-spotify-480.png")}
-                width={35}
-                height={35}
-              />
-            </Link>
-          </a>
-        </div>
       </main>
 
       <footer>
-        <a
-          href="https://github.com/kartiksindura"
+        {/* <a
+          className="mal"
+          href="https://twitter.com/kartik_sindura"
           target="_blank"
-          rel="noopener noreferrer"
         >
-          Nashe
+          <Image
+            alt="Next.js logo"
+            src={require("../public/mal.png")}
+            width={35}
+            height={35}
+          />
+        </a> */}
+        <a
+          className="twitter"
+          href="https://twitter.com/kartik_sindura"
+          target="_blank"
+        >
+          <Image
+            alt="Next.js logo"
+            src={require("../public/twitter.png")}
+            width={35}
+            height={35}
+          />
+        </a>
+        <a
+          className="github"
+          href="https://github.com/KartikSindura"
+          target="_blank"
+        >
+          <Image
+            alt="Next.js logo"
+            src={require("../public/github.png")}
+            width={35}
+            height={35}
+          />
+        </a>
+        <a
+          className="instagram"
+          href="https://www.instagram.com/kartik_sindura/"
+          target="_blank"
+        >
+          <Image
+            alt="Next.js logo"
+            src={require("../public/instagram.png")}
+            width={35}
+            height={35}
+          />
+        </a>
+        <a
+          className="spotify"
+          href="https://open.spotify.com/user/svag0j6j55jyjbmtqd3ecct1f"
+          target="_blank"
+        >
+          <Image
+            alt="Next.js logo"
+            src={require("../public/spotify.png")}
+            width={35}
+            height={35}
+          />
         </a>
       </footer>
 
       <style jsx>{`
-
-        .discord {
-          margin: 1rem;
+        .title {
+          position: absolute;
+          top: 50px;
         }
-        .twitter {
-          margin: 1rem;
-        }
-        .instagram {
-          margin: 1rem;
+        // .mal:hover {
+        //   opacity: 1;
+        //   transition: 300ms;
+        // }
+        // .mal {
+        //   opacity: 0.6;
+        //   margin: 1rem;
+        //   transition: 300ms;
+        // }
+        .spotify:hover {
+          opacity: 1;
+          transition: 300ms;
         }
         .spotify {
+          opacity: 0.6;
           margin: 1rem;
+          transition: 300ms;
+        }
+        .twitter:hover {
+          opacity: 1;
+          transition: 300ms;
+        }
+        .twitter {
+          opacity: 0.6;
+          margin: 1rem;
+          transition: 300ms;
+        }
+        .github:hover {
+          opacity: 1;
+          transition: 300ms;
         }
         .github {
+          opacity: 0.6;
           margin: 1rem;
+          transition: 300ms;
+        }
+        .instagram:hover {
+          opacity: 1;
+          transition: 300ms;
+        }
+        .instagram {
+          opacity: 0.6;
+          margin: 1rem;
+          transition: 300ms;
         }
 
         .container {
@@ -120,7 +153,7 @@ export default function Home() {
 
         footer {
           width: 100%;
-          height: 100px;
+          height: 60px;
           border-top: 1px solid #eaeaea;
           display: flex;
           justify-content: center;
