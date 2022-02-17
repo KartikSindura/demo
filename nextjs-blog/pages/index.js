@@ -7,44 +7,68 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Kartik Sindura</title>
+        <title>Kartik</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className="title">
-          <a href="https://github.com/kartiksindura" target="_blank">
-            Kartik Sindura
+          <a href="https://github.com/kartiksindura" target="_blank" style={{color:"white"}}>
+            Kartik
           </a>
+        <p></p>
         </h1>
-
-        <p className="description">This is a para</p>
-        <div className="grid">
-          <h1 className="discord">
+        <div className="logos">
+          <a className="discord">
             <Link href="/posts/first-post">
-              <a>Discord</a>
+              <Image
+                alt="Next.js logo"
+                src={require("../public/icons8-discord-480.png")}
+                width={35}
+                height={35}
+              />
             </Link>
-          </h1>
-          <h1 className="github">
+          </a>
+          <a className="twitter">
             <Link href="/posts/first-post">
-              <a>Github</a>
+              <Image
+                alt="Next.js logo"
+                src={require("../public/icons8-twitter-480.png")}
+                width={35}
+                height={35}
+              />
             </Link>
-          </h1>
-          <h1 className="spotify">
+          </a>
+          <a className="github">
             <Link href="/posts/first-post">
-              <a>Spotify</a>
+              <Image
+                alt="Next.js logo"
+                src={require("../public/icons8-github-480.png")}
+                width={35}
+                height={35}
+              />
             </Link>
-          </h1>
-          <h1 className="twitter">
+          </a>
+          <a className="instagram">
             <Link href="/posts/first-post">
-              <a>Twitter</a>
+              <Image
+                alt="Next.js logo"
+                src={require("../public/icons8-instagram-480.png")}
+                width={35}
+                height={35}
+              />
             </Link>
-          </h1>
-          <h1 className="instagram">
+          </a>
+          <a className="spotify">
             <Link href="/posts/first-post">
-              <a>Instagram</a>
+              <Image
+                alt="Next.js logo"
+                src={require("../public/icons8-spotify-480.png")}
+                width={35}
+                height={35}
+              />
             </Link>
-          </h1>
+          </a>
         </div>
       </main>
 
@@ -54,11 +78,28 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          This is a footer
+          Nashe
         </a>
       </footer>
 
       <style jsx>{`
+
+        .discord {
+          margin: 1rem;
+        }
+        .twitter {
+          margin: 1rem;
+        }
+        .instagram {
+          margin: 1rem;
+        }
+        .spotify {
+          margin: 1rem;
+        }
+        .github {
+          margin: 1rem;
+        }
+
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
@@ -84,6 +125,7 @@ export default function Home() {
           display: flex;
           justify-content: center;
           align-items: center;
+          color: white;
         }
 
         footer img {
